@@ -39,6 +39,27 @@ export default function LoginPage() {
             </div>
 
             <div className="relative max-w-md w-full animate-fade-in">
+                {/* Back Button */}
+                <button
+                    onClick={() => router.push('/')}
+                    className="inline-flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium transition-colors duration-300 group mb-6"
+                >
+                    <svg
+                        className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 19l-7-7 7-7"
+                        />
+                    </svg>
+                    Back to Home
+                </button>
+
                 {/* Header */}
                 <div className="text-center mb-10">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-xl shadow-indigo-500/30 mb-6">
